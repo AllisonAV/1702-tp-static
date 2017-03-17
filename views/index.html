@@ -6,4 +6,26 @@
 
 <body>
 	<h1>Welcome to your NYC Trip Planner!!</h1>
+
+	<label>Hotels:</label>
+		<select name="hotels">
+			{% for hotel in hotels%}
+			<option value={{hotel.name}}>{{hotel.name}}</option>
+			{% endfor %}
+		</select>
+
+	<label>Restaurants:</label>
+		<select name="restaurants">
+			{% for restaurant in restaurants%}
+			<option value={{restaurant.name}}>{{restaurant.name}}</option>
+			{% endfor %}
+		</select>
+
+	<label>Activities:</label>
+		<select name="activities">
+			{% for activity in activities%}
+			<option value={{activity.name}}>{{activity.name}}</option>
+			{% endfor %}
+		</select>
+		
 </body>
